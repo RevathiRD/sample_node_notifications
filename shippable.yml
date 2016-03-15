@@ -40,14 +40,14 @@ integrations:
       type: slack
       recipients:
         - "#public-chnl"
-      on_start: always
+      on_start: never
       on_success: always
       on_failure: never
     - integrationName: ship-slack-test
       type: slack
       recipients:
         - "#random"
-      on_start: always
+      on_start: never
       on_success: always
       on_failure: never    
       
