@@ -41,22 +41,17 @@ integrations:
       recipients:
         - "#public-chnl"
       on_start: never
-      on_success: always
+      on_success: never
       on_failure: never
     - integrationName: ship-slack-test
       type: slack
       recipients:
         - "#random"
       on_start: never
-      on_success: always
+      on_success: never
       on_failure: never    
       
       
-      
-      
-      
-  
-  
   
   
   
