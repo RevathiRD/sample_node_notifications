@@ -42,7 +42,7 @@ integrations:
       
       on_success: always
       on_failure: always 
-    - integrationName: ship-slack2
+    - integrationName: ship-slack-test
       type: slack
       recipients:
         - "#random"
