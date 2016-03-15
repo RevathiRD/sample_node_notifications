@@ -43,13 +43,13 @@ integrations:
       on_start: never
       on_success: always
       on_failure: change
-    - integrationName: ship-slack-test
-      type: slack
-      recipients:
-        - "#random"
-      on_start: never
-      on_success: always
-      on_failure: change   
+   # - integrationName: ship-slack-test
+    #  type: slack
+     # recipients:
+      #  - "#random"
+      #on_start: never
+      #on_success: always
+      #on_failure: change   
       
       
       
