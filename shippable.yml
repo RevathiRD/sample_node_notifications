@@ -25,6 +25,7 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - if [ "$SHIPPABLE_NODE_VERSION" == "0.11" ]; then foobar; fi
 
   post_ci:
     - docker push shippabledocker/hitchcock3_sample_node
@@ -41,13 +42,13 @@ integrations:
         - "#public-chnl"
       on_start: always
       on_success: change
-      on_failure: always 
+      #on_failure: always
     - integrationName: ship-slack-test
       type: slack
       recipients:
         - "#random"
       on_start: always
       on_success: change
-      on_failure: always      
+      #on_failure: always     
   
 
