@@ -45,28 +45,20 @@ integrations:
           on_start: always
           on_success: always
           on_failure: always 
-        - integrationName: email
-          type: email
-          recipients:
-            - revathi@shippable.com
+        
           on_start: always
-          on_success: always
-          on_failure: always 
+          on_success: never
+          on_failure: never
           
-             
-       # - integrationName: ship-slack
-        #  type: slack
-         # recipients:
-          #  - "#public-chnl"
-
-          #on_success: always
-          #on_failure: always 
-        #- integrationName: ship-test
-         # type: slack
-         # recipients:
-          #  - "#random"
-           
-         # on_success: always
-          #on_failure: always 
-      
-
+          on_start: always
+          on_success: never
+          on_failure: change
+          
+          on_start: always
+          on_success: change
+          on_failure: never
+          
+          on_start: always
+          on_success: change
+          on_failure: change
+        
