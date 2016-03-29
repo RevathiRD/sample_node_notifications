@@ -30,8 +30,8 @@ integrations:
     - integrationName: ship-hipchat
       type: hipchat
       recipients:
-         - '#Private-room'
-            #- '#Pillar%20of%20Autumn'
+         #- '#Private-room'
+         - '@shiphitchcock3'
             #- '@PranayPareek'
       on_start: always
       on_success: always
