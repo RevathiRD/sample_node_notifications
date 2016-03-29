@@ -27,7 +27,7 @@ build:
     #- if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi
 integrations:
   notifications:
-    - integrationName: ship-hipchat-user
+    - integrationName: ship-hipchat-room-user
       type: hipchat
       recipients:
          - '#Private-room'
