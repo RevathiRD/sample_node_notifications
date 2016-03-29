@@ -13,52 +13,29 @@ env:
     - M1=ONE
 
 build:
-  pre_ci:
-    - docker build -t=shippabledocker/hitchcock3_sample_node .
+ 
 
   pre_ci_boot:
-    image_name: shippabledocker/hitchcock3_sample_node
-    image_tag: latest
-    pull: false
+    image_name: drydock/u14nodall
+    image_tag: prod
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
     - ps -eax
     - ls -al
     #- if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi
-
-  post_ci:
-    - docker push shippabledocker/hitchcock3_sample_node
-
 integrations:
-  hub:
-    - integrationName: ship-docker
-      type: docker
-     # branches:
-      #  only:
-       #   - master
-  notifications:
-        - integrationName: email
-          type: email
+    notifications:
+        - integrationName: ship-hipchat
+          type: hipchat
           recipients:
-            - padmakumar.revathi@gmail.com
+            - '#private-room'
+            #- '#Pillar%20of%20Autumn'
+            #- '@PranayPareek'
           on_start: always
           on_success: always
-          on_failure: always 
-        
-          on_start: always
-          on_success: never
-          on_failure: never
-          
-          on_start: always
-          on_success: never
-          on_failure: change
-          
-          on_start: always
-          on_success: change
-          on_failure: never
-          
-          on_start: always
-          on_success: change
-          on_failure: change
-        
+          on_failure: always
+          on_pull_request: always
+ 
+
