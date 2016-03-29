@@ -30,7 +30,7 @@ integrations:
     - integrationName: ship-hipchat-user
       type: hipchat
       recipients:
-         #- '#Private-room'
+         - '#Private-room'
          - '@shiphitchcock3'
             #- '@PranayPareek'
       on_start: always
