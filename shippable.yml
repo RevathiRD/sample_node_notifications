@@ -33,11 +33,13 @@ integrations:
          - '#Private-room'
          - '@shiphitchcock3'
             #- '@PranayPareek'
+     # on_start: always
+      #on_success: always
+      #on_failure: always
+      #on_pull_request: always
       on_start: always
-      on_success: always
-      on_failure: always
-      on_pull_request: always
-    
+      on_success: never
+      on_failure: never
  
  
 
