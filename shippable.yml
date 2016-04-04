@@ -42,7 +42,7 @@ integrations:
           type: email
           recipients:
             - revathi@shippable.com
-          on_start: always
+          on_start: never
           on_pull_request: always
           on_success: always
           on_failure: always 
@@ -51,7 +51,7 @@ integrations:
           type: slack
           recipients:
             - "#random"
-          on_start: always
+          on_start: never
           on_pull_request: always
           on_success: always
           on_failure: always 
@@ -59,7 +59,7 @@ integrations:
           type: irc
           recipients:
             - "chat.freenode.net#test-irc"
-          on_start: always
+          on_start: never
           on_pull_request: always
           on_success: always
           on_failure: always 
@@ -68,7 +68,7 @@ integrations:
           recipients:
             - '#Private-room'
             - '@shiphitchcock3'
-          on_start: always
+          on_start: never
           on_success: always
           on_failure: always
           
