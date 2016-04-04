@@ -63,8 +63,14 @@ integrations:
           on_pull_request: always
           on_success: always
           on_failure: always 
-          
-          
+        - integrationName: ship-hipchat-room-user
+          type: hipchat
+          recipients:
+            - '#Private-room'
+            - '@shiphitchcock3'
+          on_start: always
+          on_success: always
+          on_failure: always
           
           
           
