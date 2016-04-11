@@ -68,7 +68,7 @@ integrations:
           recipients:
             - '#Private-room'
             - '@shiphitchcock3'
-          on_start: never
+          on_start: always
           on_success: always
           on_failure: always
           
