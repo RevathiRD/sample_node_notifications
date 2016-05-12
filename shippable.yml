@@ -32,9 +32,9 @@ build:
    # - docker push shippabledocker/hitchcock3_sample_node
 
 integrations:
-  hub:
-    - integrationName: ship-docker
-      type: docker
+  #hub:
+   # - integrationName: ship-docker
+    #  type: docker
      # branches:
       #  only:
        #   - master
