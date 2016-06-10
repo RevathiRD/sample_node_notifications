@@ -32,7 +32,7 @@ integrations:
           recipients:
             - shiphitchcock3@gmail.com
           on_start: always
-          on_success: always
+          on_success: change
           on_failure: always 
           on_pull_request: always
           
@@ -41,7 +41,7 @@ integrations:
           recipients:
             - "#random"
           on_start: always
-          on_success: always
+          on_success: change
           on_failure: always 
           on_pull_request: always
           
@@ -52,7 +52,7 @@ integrations:
             - '#Private-room'
             - '@shiphitchcock3'
           on_start: always
-          on_success: always
+          on_success: change
           on_failure: always
           on_pull_request: always
       
