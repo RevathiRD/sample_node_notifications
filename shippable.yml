@@ -34,7 +34,7 @@ integrations:
           #on_start: never
           on_success: never
           on_failure: never
-          #on_pull_request: always
+          on_pull_request: never
           
         - integrationName: ship-slack
           type: slack
@@ -43,7 +43,7 @@ integrations:
           #on_start: never
           on_success: never
           on_failure: never 
-          #on_pull_request: always
+          on_pull_request: never
           
        
         - integrationName: ship-hipchat-room-user
@@ -54,7 +54,7 @@ integrations:
          # on_start: never
           on_success: never
           on_failure: never
-         # on_pull_request: always
+          on_pull_request: never
       
           
           
