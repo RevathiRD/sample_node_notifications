@@ -31,7 +31,7 @@ integrations:
           type: email
           recipients:
             - shiphitchcock3@gmail.com
-          on_start: always
+          on_start: never
           on_success: always
           on_failure: change 
           on_pull_request: always
@@ -40,7 +40,7 @@ integrations:
           type: slack
           recipients:
             - "#random"
-          on_start: always
+          on_start: never
           on_success: always
           on_failure: change 
           on_pull_request: always
@@ -51,7 +51,7 @@ integrations:
           recipients:
             - '#Private-room'
             - '@shiphitchcock3'
-          on_start: always
+          on_start: never
           on_success: always
           on_failure: change
           on_pull_request: always
