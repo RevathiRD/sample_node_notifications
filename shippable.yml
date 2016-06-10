@@ -32,8 +32,8 @@ integrations:
           recipients:
             - shiphitchcock3@gmail.com
           #on_start: never
-          on_success: always
-          on_failure: always
+          on_success: never
+          on_failure: never
           #on_pull_request: always
           
         - integrationName: ship-slack
@@ -41,8 +41,8 @@ integrations:
           recipients:
             - "#random"
           #on_start: never
-          on_success: always
-          on_failure: always 
+          on_success: never
+          on_failure: never 
           #on_pull_request: always
           
        
@@ -52,8 +52,8 @@ integrations:
             - '#Private-room'
             - '@shiphitchcock3'
          # on_start: never
-          on_success: always
-          on_failure: always
+          on_success: never
+          on_failure: never
          # on_pull_request: always
       
           
