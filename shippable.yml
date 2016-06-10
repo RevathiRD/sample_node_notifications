@@ -14,14 +14,7 @@ env:
     - M1=ONE
 
 build:
- # pre_ci:
-  #  - docker build -t=shippabledocker/hitchcock3_sample_node .
-
- # pre_ci_boot:
-  #  image_name: shippabledocker/hitchcock3_sample_node
-   # image_tag: latest
-    #pull: false
-    #options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+ 
 
   ci:
     - ps -eax
@@ -32,12 +25,7 @@ build:
    # - docker push shippabledocker/hitchcock3_sample_node
 
 integrations:
-  #hub:
-   # - integrationName: ship-docker
-    #  type: docker
-     # branches:
-      #  only:
-       #   - master
+  
   notifications:
         - integrationName: email
           type: email
@@ -52,18 +40,11 @@ integrations:
           type: slack
           recipients:
             - "#random"
-          on_start: always
-          on_pull_request: always
-          on_success: always
-          on_failure: always 
-        - integrationName: irc
-          type: irc
-          recipients:
-            - "chat.freenode.net#test-irc"
           on_start: never
           on_pull_request: always
           on_success: always
           on_failure: always 
+       
         - integrationName: ship-hipchat-room-user
           type: hipchat
           recipients:
@@ -71,7 +52,7 @@ integrations:
             - '@shiphitchcock3'
           on_start: always
           on_success: always
-        #  on_failure: always
+          on_failure: always
           
           
           
