@@ -13,12 +13,21 @@ env:
     - M1=ONE
 
 build:
-  
+  pre_ci:
+    - docker build -t=revathird/imagenode .
+
+  pre_ci_boot:
+    image_name: revathird/imagenode
+    image_tag: latest
+    pull: false
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+ 
 
   ci:
     - ps -eax
     - ls -al
-
+  post_ci:
+    - docker push revathird/imagenode
 integrations: 
 
   notifications:
